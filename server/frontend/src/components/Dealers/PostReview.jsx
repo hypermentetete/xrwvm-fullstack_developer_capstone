@@ -100,7 +100,7 @@ const PostReview = () => {
       Purchase Date <input type="date" onChange={(e) => setDate(e.target.value)}/>
       </div>
       <div className='input_field'>
-      Car Make 
+      Car Brand 
       <select name="cars" id="cars" onChange={(e) => setModel(e.target.value)}>
       <option value="" selected disabled hidden>Choose Car Make and Model</option>
       {carmodels.map(carmodel => (
@@ -114,7 +114,7 @@ const PostReview = () => {
       </div>
 
       <div>
-      <button className='postreview' onClick={postreview}>Post Review</button>
+      <button className='postreview' onClick={postreview}>Post Review of Dealer</button>
       </div>
     </div>
     </div>
