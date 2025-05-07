@@ -14,7 +14,7 @@ import logging
 import json
 from .models import CarMake, CarModel
 from django.views.decorators.csrf import csrf_exempt
-from .restapis import get_request, analyze_review_sentiments #, post_review
+from .restapis import get_request, analyze_review_sentiments  # , post_review
 from .populate import initiate
 
 
@@ -102,7 +102,7 @@ def get_cars(request):
 # # Update the `get_dealerships` view to render the index page with
 # a list of dealerships
 # def get_dealerships(request):
-# Update the `get_dealerships` render list of dealerships all by default, 
+# Update the `get_dealerships` render list of dealerships all by default,
 # particular state if state is passed
 def get_dealerships(request, state="All"):
     if (state == "All"):
