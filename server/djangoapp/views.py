@@ -87,8 +87,11 @@ def registration(request):
 
 
 def get_cars(request):
-    count = CarMake.objects.filter().count()
+    print("aaaaaaaaaaaaaaaaaaaaaaaaaaaa")
+    print("bbbbbbbbbbbbbbbbbbbbbbbbbbbb")
+    count = 0 # CarMake.objects.filter().count()
     print(count)
+    print("cccccccccccccccccccccccccccc")
     if (count == 0):
         initiate()
     car_models = CarModel.objects.select_related('car_make')
